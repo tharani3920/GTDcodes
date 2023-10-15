@@ -5,59 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
-    <script>
-      function validateAndDisplay() {
-        var email = document.querySelector('input[type="email"]').value;
-        var name = document.querySelector('input[type="text"]').value;
-
-        var emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
-        var chename = /^[A-Za-z0-9]{4,}$/;
-
-        if (email.match(emailRegex) && name.match(chename)) {
-          document.getElementById("output").innerHTML =
-            "Email: " + email + "<br>Name: " + name;
-        } else {
-          document.getElementById("output").innerHTML =
-            "Invalid email format or name";
-        }
-      }
-
-      function checkvalidate() {
-        var fname = document.getElementById("fn").value;
-        var lname = document.getElementById("ln").value;
-
-        if (document.getElementById("fn").checkValidity()) {
-          document.getElementById("name").innerHTML =
-            "fname:" + fname + " lname:" + lname;
-        } else {
-          document.getElementById("name").innerHTML = "not submitted";
-        }
-      }
-
-      function convertToInches() {
-        var lengthInOtherUnit = parseFloat(
-          document.getElementById("length").value
-        );
-        var inches = lengthInOtherUnit / 2.54; // Conversion factor: 1 inch = 2.54 cm
-        document.getElementById("result").innerHTML =
-          lengthInOtherUnit +
-          " cm is approximately " +
-          inches.toFixed(2) +
-          " inches.";
-      }
-    </script>
+    <script src="./javascript.js"></script>
   </head>
   <body>
-    <h1 style="background-color: aqua">this is tharani</h1>
-    <p class="para">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam veniam a
-      dolorum maxime inventore. Placeat asperiores quia totam vitae tempore non
-      dignissimos. Tenetur possimus perspiciatis reiciendis aut odio aperiam
-      quia?
-    </p>
+    <h1 style="background-color: aqua">this is tharani & Gobi Codes</h1>
+    <label for="eemail" class="para">Email</label><br />
+    <input type="email" id="eemail" /><br /><br />
+    <label for="namee" class="para">User Name</label><br />
 
-    <input type="email" /><br /><br />
-    <input type="text" placeholder="Enter your name" /><br /><br />
+    <input type="text" id="namee" placeholder="Enter your name" /><br /><br />
     <input
       type="button"
       value="Submit"
