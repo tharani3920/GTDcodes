@@ -12,3 +12,6 @@
 #output {
   color: red;
 }
+.block-level {
+  border: 2px solid blue;
+}
