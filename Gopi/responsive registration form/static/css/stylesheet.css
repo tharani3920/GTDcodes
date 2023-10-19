@@ -1,0 +1,98 @@
+body{
+    background-image: url(../img/ultra-hd-wazf67lzyh5q7k32.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fullfrom{
+    width: 35vw;
+    margin: 80px auto;
+    background-color: rgba(0, 0, 0, 0.29);
+    color: white;
+    padding: 20px 20px 30px;
+    font-size: 20px;
+    border-radius: 1em;
+}
+
+.text h1{
+    text-align: center;
+    font-size: 1.9em;
+    color: #6096BA;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ffffff 0%, #08a3fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.in label{
+    font-size: 1em;
+    color: rgb(0, 156, 247);
+    text-transform: uppercase;
+}
+
+
+.in{
+    display: flex;
+    flex-direction: column;
+    bottom: 10px;
+}
+
+.in input{
+    width: 100%;
+    font-size: 1em;
+    border: 2px solid #05c5ff;
+    border-radius: 1em;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin: 15px 0px 10px;
+}
+
+.in input::placeholder{
+    padding: 0.1em;
+    text-align: center;
+}
+
+.in input:focus{
+    outline:0;
+}
+
+.in input[type=date]{
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 2em;
+    padding: 10px 10px;
+    margin: 10px 0px 25px;
+    border: 2px solid #01c1f1;
+    background-color: rgb(121, 170, 185);
+    cursor: pointer;
+}
+
+
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/* validation */
+
+.in .error{
+    color:rgb(255, 72, 0);
+    font-size:1em;
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
+
+.in.success input{
+    border-color: #00fc93ea;
+}
+
+.in.error input{
+    border-color:rgb(255, 72, 0);
+}
